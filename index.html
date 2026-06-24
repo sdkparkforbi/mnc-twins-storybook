@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>두 쌍둥이 이야기 — 한 지붕 아래, 본사라는 별을 향해</title>
+<meta name="description" content="다국적기업 자회사 속 연구(R&D)와 마케팅, 두 기능의 비밀을 풀어낸 그림 동화. 어느 학술 논문에서 피어난 이야기.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="두 쌍둥이 이야기 — 한 지붕 아래, 본사라는 별을 향해">
+<meta property="og:description" content="다국적기업 자회사 속 연구와 마케팅, 두 기능의 비밀을 풀어낸 그림 동화.">
+<meta property="og:image" content="thumbnail.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gaegu:wght@400;700&family=Noto+Serif+KR:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#F5ECD7; --page:#FBF6E9; --line:#E5D6B4; --ink:#3A3226; --soft:#6A583A; --muted:#9A8A66;
+    --rnd:#4A7BA6; --rnd-d:#2C4A63; --mkt:#C8743A; --mkt-d:#8A4A22; --gold:#E0A030;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0; background:
+      radial-gradient(circle at 20% 10%, #EFE3C6 0%, transparent 45%),
+      radial-gradient(circle at 85% 80%, #EAE0C0 0%, transparent 50%),
+      #F0E6CC;
+    color:var(--ink); font-family:'Noto Serif KR', serif; line-height:1.9;
+    -webkit-font-smoothing:antialiased;
+  }
+  #bar{position:fixed; top:0; left:0; height:4px; width:0; background:var(--mkt); z-index:50; transition:width .15s;}
+  .wrap{max-width:760px; margin:0 auto; padding:48px 20px 80px;}
+  .page{
+    background:var(--page); border:1px solid var(--line); border-radius:18px;
+    padding:38px 40px 44px; margin:0 0 30px; box-shadow:0 8px 30px rgba(120,95,45,.08);
+  }
+  .pnum{font-family:'Gaegu',cursive; font-size:18px; color:var(--muted); letter-spacing:.04em; margin:0 0 18px;}
+  .scene{display:block; width:100%; background:#FFFCF2; border:1px solid #EFE3C2; border-radius:12px; margin:0 0 22px;}
+  h1{font-family:'Gaegu',cursive; font-weight:700; font-size:46px; line-height:1.25; color:var(--ink); margin:6px 0 14px; text-align:center;}
+  .sub{font-family:'Gaegu',cursive; font-size:24px; color:var(--soft); text-align:center; margin:0 0 6px;}
+  .tag{text-align:center; color:var(--muted); font-size:15px; margin:0;}
+  h2{font-family:'Gaegu',cursive; font-weight:700; font-size:30px; color:var(--ink); margin:0 0 16px;}
+  p{font-size:18px; margin:0 0 14px;}
+  .say{color:var(--rnd-d);} .say.mkt{color:var(--mkt-d);}
+  b{font-weight:700; color:var(--ink);}
+  .nums{display:flex; flex-wrap:wrap; gap:12px; justify-content:center; margin:6px 0 4px;}
+  .num{background:#FFFCF2; border:1px solid #EAD9B2; border-radius:12px; padding:12px 18px; text-align:center; min-width:120px;}
+  .num .b{font-family:'Gaegu',cursive; font-size:34px; font-weight:700; color:var(--mkt-d); line-height:1;}
+  .num .l{font-size:14px; color:var(--soft); margin-top:6px;}
+  .note{font-family:'Noto Serif KR',serif; background:#EFE6CF; border:1px solid #DDCDA4; border-radius:12px; padding:16px 20px; color:var(--soft); font-size:15px; line-height:1.7; margin:20px 0 0;}
+  .end{font-family:'Gaegu',cursive; font-size:30px; color:var(--muted); text-align:center; margin:10px 0 0;}
+  footer{text-align:center; color:var(--muted); font-size:14px; padding:10px 0 0;}
+  footer a{color:var(--mkt-d);}
+  @media (max-width:560px){ .page{padding:28px 22px 32px;} h1{font-size:36px;} h2{font-size:26px;} p{font-size:17px;} }
+</style>
+</head>
+<body>
+<div id="bar"></div>
+<div class="wrap">
+
+  <!-- COVER -->
+  <section class="page" style="text-align:center;">
+    <p class="pnum" style="text-align:center;">그림 동화</p>
+    <svg class="scene" viewBox="0 0 700 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="두 창문이 있는 작은 집과 밤하늘의 별">
+      <rect width="700" height="210" fill="#27406B"/>
+      <circle cx="600" cy="55" r="30" fill="#F3D27A"/><circle cx="588" cy="50" r="30" fill="#27406B"/>
+      <g fill="#F7E7A8"><circle cx="120" cy="55" r="2.5"/><circle cx="200" cy="40" r="2"/><circle cx="300" cy="70" r="2.5"/><circle cx="420" cy="45" r="2"/><circle cx="500" cy="95" r="2.5"/><circle cx="660" cy="120" r="2"/><circle cx="70" cy="120" r="2"/></g>
+      <g><polygon points="350,95 344,108 356,108" fill="#F3D27A"/><rect x="349" y="60" width="2" height="40" fill="#F3D27A"/><circle cx="350" cy="50" r="9" fill="#FBEFC2"/><circle cx="350" cy="50" r="16" fill="#F3D27A" opacity=".3"/></g>
+      <path d="M0 210 Q175 178 350 204 T700 210 L700 300 L0 300Z" fill="#9DBE6E"/>
+      <path d="M0 255 Q210 226 420 250 T700 252 L700 300 L0 300Z" fill="#7FA84F"/>
+      <g><rect x="278" y="160" width="150" height="78" rx="5" fill="#E7C9A0"/><polygon points="268,160 438,160 353,120" fill="#C26B47"/><circle cx="318" cy="198" r="19" fill="#FFFCF2"/><circle cx="388" cy="198" r="19" fill="#FFFCF2"/><circle cx="318" cy="198" r="12" fill="#4A7BA6"/><circle cx="388" cy="198" r="12" fill="#C8743A"/><circle cx="318" cy="198" r="3.5" fill="#fff"/><circle cx="388" cy="198" r="3.5" fill="#fff"/><rect x="345" y="208" width="16" height="30" rx="3" fill="#8A5A38"/></g>
+    </svg>
+    <h1>두 쌍둥이 이야기</h1>
+    <p class="sub">한 지붕 아래, 본사라는 별을 향해</p>
+    <p class="tag">다국적기업 자회사 속 연구(R&amp;D)와 마케팅 — 어느 학술 논문에서 피어난 동화</p>
+  </section>
+
+  <!-- 1 프롤로그 -->
+  <section class="page">
+    <p class="pnum">제1장 · 똑같아 보이던 작은 집들</p>
+    <svg class="scene" viewBox="0 0 700 170" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="줄지어 선 똑같은 상자 모양 집들">
+      <rect width="700" height="170" fill="#FFFCF2"/>
+      <g fill="#8C8278" stroke="#6E665C" stroke-width="1">
+        <rect x="70" y="66" width="78" height="72" rx="3"/><rect x="180" y="66" width="78" height="72" rx="3"/><rect x="290" y="66" width="78" height="72" rx="3"/><rect x="400" y="66" width="78" height="72" rx="3"/></g>
+      <g fill="#5E574E"><rect x="101" y="98" width="16" height="40"/><rect x="211" y="98" width="16" height="40"/><rect x="321" y="98" width="16" height="40"/><rect x="431" y="98" width="16" height="40"/></g>
+      <text x="560" y="92" font-family="Gaegu,cursive" font-size="22" fill="#9A8A66">다 똑같다고…</text>
+      <text x="560" y="120" font-family="Gaegu,cursive" font-size="22" fill="#9A8A66">여겼지요</text>
+    </svg>
+    <p>옛날 옛적, 바다 건너 큰 회사들은 세계 곳곳에 작은 집을 지었어요. 그 집들을 <b>자회사</b>라고 불렀지요. 사람들은 그 집들이 모두 똑같다고 여겼어요. "자회사는 다 비슷해" 하고요.</p>
+    <p>하지만 정말 그럴까요? 아무도 문을 열어보지 않았을 뿐이었답니다.</p>
+  </section>
+
+  <!-- 2 발견 + 데이터 -->
+  <section class="page">
+    <p class="pnum">제2장 · 한 집을 열어보니</p>
+    <svg class="scene" viewBox="0 0 700 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="한 집 안의 서로 다른 두 쌍둥이">
+      <rect width="700" height="200" fill="#FFFCF2"/>
+      <rect x="230" y="42" width="240" height="138" rx="6" fill="#E7C9A0"/><polygon points="216,42 484,42 350,10" fill="#C26B47"/>
+      <line x1="350" y1="42" x2="350" y2="180" stroke="#C9A878" stroke-width="2"/>
+      <g><circle cx="292" cy="96" r="26" fill="#4A7BA6"/><circle cx="283" cy="91" r="4" fill="#fff"/><circle cx="301" cy="91" r="4" fill="#fff"/><path d="M282 107 Q292 114 302 107" stroke="#fff" stroke-width="2.5" fill="none" stroke-linecap="round"/><text x="292" y="152" text-anchor="middle" font-family="Gaegu,cursive" font-size="19" fill="#2C4A63">연구 (R&amp;D)</text></g>
+      <g><circle cx="408" cy="96" r="26" fill="#C8743A"/><circle cx="399" cy="91" r="4" fill="#fff"/><circle cx="417" cy="91" r="4" fill="#fff"/><path d="M398 105 Q408 112 418 105" stroke="#fff" stroke-width="2.5" fill="none" stroke-linecap="round"/><text x="408" y="152" text-anchor="middle" font-family="Gaegu,cursive" font-size="19" fill="#8A4A22">마케팅</text></g>
+    </svg>
+    <p>꼬마 이야기꾼이 용기를 내어 문을 살며시 열었어요. 그 안에는 똑 닮은 듯 <b>전혀 다른 두 쌍둥이</b>가 살고 있었답니다. 한 명은 <span class="say">연구(R&amp;D)</span>, 한 명은 <span class="say mkt">마케팅</span>이었지요.</p>
+    <p>이야기꾼은 무려 스물여섯 채의 집을 찾아다니며, 마을 사람과 어른들의 이야기에 가만히 귀를 기울였어요.</p>
+    <div class="nums">
+      <div class="num"><div class="b">26</div><div class="l">채의 집 (자회사)</div></div>
+      <div class="num"><div class="b">558</div><div class="l">마을 사람 (직원)</div></div>
+      <div class="num"><div class="b">35</div><div class="l">어른 (관리자)</div></div>
+      <div class="num"><div class="b">2</div><div class="l">동네 (ICT·자동차)</div></div>
+    </div>
+  </section>
+
+  <!-- 3 비밀1 -->
+  <section class="page">
+    <p class="pnum">제3장 · 첫째 비밀, 정보의 끈</p>
+    <svg class="scene" viewBox="0 0 700 170" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="연구는 별을, 마케팅은 이웃을 바라본다">
+      <rect width="700" height="170" fill="#FFFCF2"/>
+      <g><polygon points="350,40 343,55 357,55" fill="#E0A030"/><rect x="349" y="20" width="2" height="22" fill="#E0A030"/><circle cx="350" cy="18" r="11" fill="#F3D27A"/><text x="350" y="78" text-anchor="middle" font-family="Gaegu,cursive" font-size="16" fill="#9A7A2E">본사라는 별</text></g>
+      <g><circle cx="170" cy="115" r="28" fill="#4A7BA6"/><text x="170" y="120" text-anchor="middle" font-family="Gaegu,cursive" font-size="16" fill="#fff">연구</text><path d="M330 40 Q250 70 198 100" stroke="#4A7BA6" stroke-width="2.5" fill="none" stroke-dasharray="6 5"/></g>
+      <g><circle cx="540" cy="115" r="28" fill="#C8743A"/><text x="540" y="120" text-anchor="middle" font-family="Gaegu,cursive" font-size="16" fill="#fff">마케팅</text><circle cx="620" cy="80" r="10" fill="#9DBE6E"/><path d="M610 88 Q580 105 565 108" stroke="#C8743A" stroke-width="2.5" fill="none" stroke-dasharray="6 5"/><text x="622" y="62" text-anchor="middle" font-family="Gaegu,cursive" font-size="14" fill="#5E6B52">이웃(고객)</text></g>
+    </svg>
+    <p>연구는 자주 별(본사)을 올려다보았어요. <span class="say">"기본 정보와 도면은 본사에서 와요. 우린 그걸 받아 만들지요."</span></p>
+    <p>마케팅은 고개를 저었답니다. <span class="say mkt">"우린 우리 마을만 봐요. 필요한 건 별이 아니라 손님이 알려주거든요."</span></p>
+  </section>
+
+  <!-- 4 비밀2 -->
+  <section class="page">
+    <p class="pnum">제4장 · 둘째 비밀, 동네 친구</p>
+    <svg class="scene" viewBox="0 0 700 170" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="연구는 기술자 곁, 마케팅은 손님 곁">
+      <rect width="700" height="170" fill="#FFFCF2"/>
+      <g><circle cx="190" cy="90" r="26" fill="#4A7BA6"/><text x="190" y="95" text-anchor="middle" font-family="Gaegu,cursive" font-size="15" fill="#fff">연구</text>
+        <rect x="265" y="70" width="44" height="40" rx="4" fill="#8C8278"/><circle cx="287" cy="60" r="9" fill="#B4B2A9"/><path d="M218 90 H262" stroke="#4A7BA6" stroke-width="2.5" stroke-dasharray="5 4"/><text x="287" y="128" text-anchor="middle" font-family="Gaegu,cursive" font-size="14" fill="#6E665C">기술자(공급사)</text></g>
+      <g><circle cx="510" cy="90" r="26" fill="#C8743A"/><text x="510" y="95" text-anchor="middle" font-family="Gaegu,cursive" font-size="15" fill="#fff">마케팅</text>
+        <circle cx="420" cy="78" r="11" fill="#9DBE6E"/><circle cx="416" cy="74" r="2" fill="#3A3226"/><circle cx="424" cy="74" r="2" fill="#3A3226"/><path d="M484 90 H440" stroke="#C8743A" stroke-width="2.5" stroke-dasharray="5 4"/><text x="416" y="118" text-anchor="middle" font-family="Gaegu,cursive" font-size="14" fill="#5E6B52">손님(고객)</text></g>
+    </svg>
+    <p>연구는 부품을 만드는 기술자 아저씨 곁에 살고 싶어 했어요. <span class="say">"문제가 생기면 바로 달려가야 하니까요."</span> 그래서 연구의 동네 친구는 <b>기술을 받쳐 주는</b> 친구였답니다.</p>
+    <p>마케팅은 손님이 오가는 길목을 좋아했지요. <span class="say mkt">"우린 손님 가까이 있어야 마을이 뭘 원하는지 알 수 있어요."</span> 마케팅의 친구는 <b>마을 이야기를 들려주는</b> 친구였어요.</p>
+  </section>
+
+  <!-- 5 비밀3 -->
+  <section class="page">
+    <p class="pnum">제5장 · 셋째 비밀, 편지의 빈도</p>
+    <svg class="scene" viewBox="0 0 700 160" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="연구는 편지를 자주, 마케팅은 가끔">
+      <rect width="700" height="160" fill="#FFFCF2"/>
+      <g fill="#E7C9A0" stroke="#C9A878" stroke-width="1.5"><rect x="120" y="60" width="34" height="24" rx="2"/><rect x="165" y="60" width="34" height="24" rx="2"/><rect x="210" y="60" width="34" height="24" rx="2"/><rect x="142" y="92" width="34" height="24" rx="2"/><rect x="187" y="92" width="34" height="24" rx="2"/></g>
+      <text x="185" y="140" text-anchor="middle" font-family="Gaegu,cursive" font-size="16" fill="#2C4A63">연구 · 아주 자주</text>
+      <g fill="#E7C9A0" stroke="#C9A878" stroke-width="1.5"><rect x="500" y="76" width="34" height="24" rx="2"/></g>
+      <text x="517" y="140" text-anchor="middle" font-family="Gaegu,cursive" font-size="16" fill="#8A4A22">마케팅 · 가끔이면 충분</text>
+    </svg>
+    <p>연구는 별과 편지를 아주 자주 주고받았어요. 새 소식, 새 도면, 새 약속을 끊임없이 맞춰야 했거든요.</p>
+    <p>마케팅은 가끔이면 충분했답니다. 마을 일은 스스로 척척 해냈으니까요.</p>
+  </section>
+
+  <!-- 6 비밀4 -->
+  <section class="page">
+    <p class="pnum">제6장 · 넷째 비밀, 누구를 통해</p>
+    <svg class="scene" viewBox="0 0 700 175" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="마케팅은 심부름꾼, 연구는 모임과 파견">
+      <rect width="700" height="175" fill="#FFFCF2"/>
+      <g><text x="175" y="34" text-anchor="middle" font-family="Gaegu,cursive" font-size="17" fill="#8A4A22">마케팅 — 심부름꾼</text>
+        <circle cx="175" cy="95" r="22" fill="#C8743A"/><circle cx="167" cy="91" r="3" fill="#fff"/><circle cx="183" cy="91" r="3" fill="#fff"/><path d="M167 103 Q175 109 183 103" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round"/><rect x="150" y="118" width="50" height="10" rx="3" fill="#E0A030"/><text x="175" y="152" text-anchor="middle" font-family="Gaegu,cursive" font-size="14" fill="#9A7A2E">주재원</text></g>
+      <line x1="345" y1="90" x2="365" y2="90" stroke="#D8C9A0" stroke-width="2"/>
+      <g><text x="510" y="34" text-anchor="middle" font-family="Gaegu,cursive" font-size="17" fill="#2C4A63">연구 — 함께 모여</text>
+        <g fill="#4A7BA6"><circle cx="470" cy="92" r="16"/><circle cx="510" cy="80" r="16"/><circle cx="550" cy="92" r="16"/></g>
+        <text x="510" y="152" text-anchor="middle" font-family="Gaegu,cursive" font-size="14" fill="#2C4A63">working group · 파견</text></g>
+    </svg>
+    <p>소식을 나르는 방법도 달랐어요. 마케팅은 두 세상을 모두 아는 <b>심부름꾼(주재원)</b>을 가장 좋아했어요. 그가 별의 마음과 마을의 마음을 이어 주었거든요.</p>
+    <p>연구는 여럿이 머리를 맞대는 <b>모임(working group)</b>과 잠깐의 파견을 좋아했답니다. <span class="say">"기술 문제는 관리만으론 안 돼요. 직접 함께 풀어야 하거든요."</span></p>
+  </section>
+
+  <!-- 7 비밀5/6 -->
+  <section class="page">
+    <p class="pnum">제7장 · 다섯째 비밀, 자유의 두 모양</p>
+    <svg class="scene" viewBox="0 0 700 185" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="마케팅은 현지 계획의 자유, 연구는 돈과 사람의 자유">
+      <rect width="700" height="185" fill="#FFFCF2"/>
+      <g><rect x="60" y="40" width="270" height="110" rx="10" fill="#FAE7DA" stroke="#C8743A" stroke-width="1.5"/><text x="195" y="70" text-anchor="middle" font-family="Gaegu,cursive" font-size="20" fill="#8A4A22">마케팅의 자유</text><text x="195" y="100" text-anchor="middle" font-family="Noto Serif KR,serif" font-size="15" fill="#8A4A22">마을을 어떻게 꾸밀까 →</text><text x="195" y="124" text-anchor="middle" font-family="Gaegu,cursive" font-size="18" fill="#8A4A22">마음껏!</text></g>
+      <g><rect x="370" y="40" width="270" height="110" rx="10" fill="#DCEAF0" stroke="#4A7BA6" stroke-width="1.5"/><text x="505" y="70" text-anchor="middle" font-family="Gaegu,cursive" font-size="20" fill="#2C4A63">연구의 자유</text><text x="505" y="100" text-anchor="middle" font-family="Noto Serif KR,serif" font-size="15" fill="#2C4A63">돈과 사람 뽑는 일 →</text><text x="505" y="124" text-anchor="middle" font-family="Gaegu,cursive" font-size="18" fill="#2C4A63">마음껏!</text></g>
+    </svg>
+    <p>가장 신기한 비밀이 남아 있었어요. 두 쌍둥이는 <b>서로 다른 자유</b>를 누리고 있었거든요.</p>
+    <p>마케팅은 "우리 마을을 어떻게 꾸밀지"는 마음껏 정했지만, 살림돈은 별이 챙겼어요. 연구는 "돈과 사람"은 제 뜻대로였지만, "무엇을 연구할지"는 별이 정해 주었지요. <span class="say mkt">"본사는 돈은 꼭 쥐고 있어요. 대신 시장은 우리한테 맡기죠."</span></p>
+  </section>
+
+  <!-- 8 깨달음 -->
+  <section class="page">
+    <p class="pnum">제8장 · 큰 깨달음, 주고받기</p>
+    <svg class="scene" viewBox="0 0 700 175" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="본사가 한쪽엔 자유를, 한쪽엔 보살핌을 주는 주고받기">
+      <rect width="700" height="175" fill="#FFFCF2"/>
+      <g><circle cx="350" cy="42" r="20" fill="#F3D27A"/><polygon points="350,20 344,34 356,34" fill="#E0A030"/><text x="350" y="48" text-anchor="middle" font-family="Gaegu,cursive" font-size="14" fill="#9A7A2E">본사</text></g>
+      <g><circle cx="180" cy="128" r="26" fill="#4A7BA6"/><text x="180" y="133" text-anchor="middle" font-family="Gaegu,cursive" font-size="15" fill="#fff">연구</text>
+        <path d="M335 55 Q255 80 205 108" stroke="#4A7BA6" stroke-width="2.5" fill="none"/><text x="230" y="78" font-family="Gaegu,cursive" font-size="14" fill="#2C4A63">자유는 돈·사람</text></g>
+      <g><circle cx="520" cy="128" r="26" fill="#C8743A"/><text x="520" y="133" text-anchor="middle" font-family="Gaegu,cursive" font-size="15" fill="#fff">마케팅</text>
+        <path d="M365 55 Q445 80 495 108" stroke="#C8743A" stroke-width="2.5" fill="none"/><text x="430" y="78" font-family="Gaegu,cursive" font-size="14" fill="#8A4A22">자유는 현지 계획</text></g>
+    </svg>
+    <p>그제서야 이야기꾼은 깨달았어요. 부모님(본사)은 두 아이에게 <b>똑같이가 아니라, 저마다 알맞게</b> 사랑을 나눠 주고 있었던 거예요.</p>
+    <p>한쪽에는 이런 자유를, 다른 쪽에는 저런 보살핌을. 이름하여 <b>'주고받기(give-and-take)'</b>. 그렇게 별과 두 집은 멀리서도 사이좋게 손을 잡고 있었답니다.</p>
+  </section>
+
+  <!-- 9 에필로그 -->
+  <section class="page" style="text-align:center;">
+    <p class="pnum" style="text-align:center;">에필로그</p>
+    <svg class="scene" viewBox="0 0 700 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="별빛 아래 두 쌍둥이의 집">
+      <rect width="700" height="130" fill="#27406B"/>
+      <g fill="#F7E7A8"><circle cx="120" cy="40" r="2.5"/><circle cx="250" cy="60" r="2"/><circle cx="400" cy="35" r="2.5"/><circle cx="560" cy="55" r="2"/><circle cx="640" cy="90" r="2.5"/><circle cx="70" cy="80" r="2"/></g>
+      <g><polygon points="350,70 344,82 356,82" fill="#F3D27A"/><rect x="349" y="42" width="2" height="28" fill="#F3D27A"/><circle cx="350" cy="40" r="10" fill="#FBEFC2"/></g>
+      <path d="M0 130 Q175 105 350 126 T700 130 L700 200 L0 200Z" fill="#7FA84F"/>
+      <g><rect x="285" y="92" width="130" height="68" rx="5" fill="#E7C9A0"/><polygon points="276,92 424,92 350,60" fill="#C26B47"/><circle cx="320" cy="126" r="14" fill="#4A7BA6"/><circle cx="380" cy="126" r="14" fill="#C8743A"/></g>
+    </svg>
+    <p>그러니 기억해요. 자회사는 똑같은 검은 상자가 아니랍니다.</p>
+    <p>한 지붕 아래에서도 — <span class="say">연구</span>와 <span class="say mkt">마케팅</span>은 저마다 다른 별을 향해, 다른 길을 걷고 있어요.</p>
+    <p class="end">— 끝 —</p>
+    <div class="note">
+      이 동화는 실제 학술 연구를 다정하게 각색한 것이에요. ICT·자동차 산업 <b>26개 다국적기업(MNC) 자회사</b>에서 일하는 <b>직원 558명</b>의 설문과 <b>관리자 35명</b>의 인터뷰를 바탕으로, 같은 자회사 안에서도 R&amp;D와 마케팅 기능이 지식 의존·현지 착근·자율성에서 어떻게 다른지를 밝힌 연구랍니다.
+    </div>
+  </section>
+
+  <footer>
+    <p>그림 동화 · <a href="https://github.com/sdkparkforbi/mnc-twins-storybook">GitHub에서 보기</a></p>
+  </footer>
+</div>
+
+<script>
+  var bar=document.getElementById('bar');
+  function up(){var h=document.documentElement;var s=h.scrollTop;var m=h.scrollHeight-h.clientHeight;bar.style.width=(m>0?(s/m*100):0)+'%';}
+  window.addEventListener('scroll',up,{passive:true});window.addEventListener('resize',up);up();
+</script>
+</body>
+</html>
