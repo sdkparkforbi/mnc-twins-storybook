@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>꼬마 논문이의 대응 모험 — 다섯 보물로 다시 지혜의 성으로</title>
+<meta name="description" content="IBR 심사자 의견에 대한 논문 대응 전략을, 다섯 보물을 모으는 그림 동화로 풀어낸 페이지. 각 보물마다 구체적 수정 실행 항목 포함.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="꼬마 논문이의 대응 모험 — 다섯 보물로 다시 지혜의 성으로">
+<meta property="og:description" content="IBR 심사자 의견에 대한 논문 대응 전략을 다섯 보물 동화로 풀어낸 페이지.">
+<meta property="og:image" content="thumbnail-strategy.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gaegu:wght@400;700&family=Noto+Serif+KR:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#F5ECD7; --page:#FBF6E9; --line:#E5D6B4; --ink:#3A3226; --soft:#6A583A; --muted:#9A8A66;
+    --rnd:#4A7BA6; --rnd-d:#2C4A63; --mkt:#C8743A; --mkt-d:#8A4A22; --gold:#E0A030; --owl:#9A5A2A;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0; background:
+      radial-gradient(circle at 20% 10%, #EAE0C0 0%, transparent 45%),
+      radial-gradient(circle at 85% 80%, #E7DBB8 0%, transparent 50%),
+      #ECE0C4;
+    color:var(--ink); font-family:'Noto Serif KR', serif; line-height:1.9; -webkit-font-smoothing:antialiased;
+  }
+  #bar{position:fixed; top:0; left:0; height:4px; width:0; background:var(--owl); z-index:50; transition:width .15s;}
+  .nav{max-width:760px; margin:0 auto; padding:18px 20px 0; display:flex; gap:14px; justify-content:center; font-family:'Gaegu',cursive; font-size:18px;}
+  .nav a{color:var(--soft); text-decoration:none; padding:4px 14px; border:1px solid var(--line); border-radius:20px; background:#FBF6E9;}
+  .nav a.on{color:#fff; background:var(--owl); border-color:var(--owl);}
+  .wrap{max-width:760px; margin:0 auto; padding:20px 20px 80px;}
+  .page{background:var(--page); border:1px solid var(--line); border-radius:18px; padding:38px 40px 44px; margin:0 0 30px; box-shadow:0 8px 30px rgba(120,95,45,.08);}
+  .pnum{font-family:'Gaegu',cursive; font-size:18px; color:var(--muted); letter-spacing:.04em; margin:0 0 18px;}
+  .scene{display:block; width:100%; background:#FFFCF2; border:1px solid #EFE3C2; border-radius:12px; margin:0 0 22px;}
+  h1{font-family:'Gaegu',cursive; font-weight:700; font-size:44px; line-height:1.25; color:var(--ink); margin:6px 0 14px; text-align:center;}
+  .sub{font-family:'Gaegu',cursive; font-size:24px; color:var(--soft); text-align:center; margin:0 0 6px;}
+  .tag{text-align:center; color:var(--muted); font-size:15px; margin:0;}
+  h2{font-family:'Gaegu',cursive; font-weight:700; font-size:30px; color:var(--ink); margin:0 0 14px;}
+  p{font-size:18px; margin:0 0 14px;}
+  .say{color:var(--owl); font-style:italic;}
+  b{font-weight:700; color:var(--ink);}
+  .act{font-family:'Noto Serif KR',serif; background:#EFE6CF; border:1px solid #DDCDA4; border-radius:12px; padding:18px 22px; margin:18px 0 0;}
+  .act .hd{font-family:'Gaegu',cursive; font-size:22px; color:var(--owl); margin:0 0 10px;}
+  .act ul{margin:0; padding:0 0 0 4px; list-style:none;}
+  .act li{font-size:15.5px; color:#4a3d28; line-height:1.7; margin:0 0 9px; padding-left:24px; position:relative;}
+  .act li::before{content:"✦"; position:absolute; left:0; top:0; color:var(--gold);}
+  .act .who{display:inline-block; font-size:12.5px; color:#7a5; color:var(--mkt-d); background:#FAE7DA; border:1px solid #E8C3A8; border-radius:20px; padding:1px 9px; margin-right:6px; vertical-align:1px; font-family:'Gaegu',cursive;}
+  table{width:100%; border-collapse:collapse; margin:8px 0 0; font-size:15px;}
+  th,td{border:1px solid #E0D1AC; padding:10px 12px; text-align:left; vertical-align:top;}
+  th{background:#EFE6CF; font-weight:700; font-family:'Gaegu',cursive; font-size:17px; color:var(--owl);}
+  td b{color:var(--owl);}
+  .end{font-family:'Gaegu',cursive; font-size:30px; color:var(--muted); text-align:center; margin:10px 0 0;}
+  .refs{font-size:13.5px; color:var(--soft); line-height:1.75;}
+  .refs p{font-size:13.5px; margin:0 0 7px;}
+  footer{text-align:center; color:var(--muted); font-size:14px; padding:10px 0 0;}
+  footer a{color:var(--owl);}
+  @media (max-width:560px){ .page{padding:28px 22px 32px;} h1{font-size:34px;} h2{font-size:25px;} p{font-size:17px;} th,td{font-size:13.5px;} }
+</style>
+</head>
+<body>
+<div id="bar"></div>
+<div class="nav"><a href="index.html">📖 동화: 두 쌍둥이</a><a class="on" href="strategy.html">🗺️ 대응 전략</a></div>
+<div class="wrap">
+
+  <!-- COVER -->
+  <section class="page" style="text-align:center;">
+    <p class="pnum" style="text-align:center;">그림 동화 · 논문 대응 전략</p>
+    <svg class="scene" viewBox="0 0 700 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="두 부엉이가 지키는 지혜의 성과 다섯 보물">
+      <rect width="700" height="170" fill="#E7EEF2"/>
+      <path d="M0 130 L700 130 L700 250 L0 250Z" fill="#C7D6BC"/>
+      <g fill="#9A8775"><rect x="300" y="44" width="100" height="86"/><rect x="288" y="34" width="34" height="96"/><rect x="378" y="34" width="34" height="96"/><polygon points="288,34 305,14 322,34"/><polygon points="378,34 395,14 412,34"/></g>
+      <rect x="338" y="82" width="24" height="48" rx="12" fill="#5E4F3F"/>
+      <g><ellipse cx="200" cy="92" rx="24" ry="28" fill="#A9742E"/><circle cx="191" cy="84" r="9" fill="#FBF6E9"/><circle cx="209" cy="84" r="9" fill="#FBF6E9"/><circle cx="191" cy="84" r="3.5" fill="#33291B"/><circle cx="209" cy="84" r="3.5" fill="#33291B"/><polygon points="200,92 195,99 205,99" fill="#E0A030"/></g>
+      <g><ellipse cx="500" cy="92" rx="24" ry="28" fill="#7C6A55"/><circle cx="491" cy="84" r="9" fill="#FBF6E9"/><circle cx="509" cy="84" r="9" fill="#FBF6E9"/><circle cx="491" cy="84" r="3.5" fill="#33291B"/><circle cx="509" cy="84" r="3.5" fill="#33291B"/><polygon points="500,92 495,99 505,99" fill="#E0A030"/></g>
+      <g fill="#F2C84B"><polygon points="120,175 126,189 140,190 129,199 133,213 120,205 107,213 111,199 100,190 114,189"/><polygon points="580,175 586,189 600,190 589,199 593,213 580,205 567,213 571,199 560,190 574,189"/></g>
+      <text x="350" y="200" text-anchor="middle" font-family="Gaegu,cursive" font-size="17" fill="#5E6B52">지혜의 성 · International Business Review</text>
+    </svg>
+    <h1>꼬마 논문이의 대응 모험</h1>
+    <p class="sub">다섯 보물을 모아 다시 지혜의 성으로</p>
+    <p class="tag">IBR 심사자 의견에 답하는 논문 수정·대응 전략 — 동화로 쉽게, 실행은 구체적으로</p>
+  </section>
+
+  <!-- 1 두 부엉이 -->
+  <section class="page">
+    <p class="pnum">제1장 · 성문 앞 두 부엉이</p>
+    <p>꼬마 논문이가 신기한 이야기를 들고 지혜의 성에 닿았어요. 문 앞에는 무엇이든 꿰뚫어 보는 <b>두 부엉이(심사자)</b>가 있었지요.</p>
+    <p>첫째 부엉이는 다정하지만 단호했어요. <span class="say">"이야기는 흥미롭구나. 허나 '왜 그런지'를 밝히는 이론이 옅고, 인터뷰를 어떻게 들었는지 길이 보이지 않으며, 두 산업만으로는 멀리까지 닿기 어렵겠다."</span></p>
+    <p>둘째 부엉이는 친절한 안내자였어요. <span class="say">"서론을 선현의 책에 단단히 묶고, 어느 땅·어느 마을인지 밝히고, 잰 것들을 표로 보여 주렴. 그러면 성문이 열릴 게다."</span></p>
+    <p>두 부엉이의 말은 흠이 아니라 <b>더 단단한 이야기로 가는 보물 지도</b>였답니다. 모아야 할 보물은 모두 다섯.</p>
+  </section>
+
+  <!-- 보물 1 -->
+  <section class="page">
+    <p class="pnum">보물 ① · 이론의 등불</p>
+    <svg class="scene" viewBox="0 0 700 130" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="어둠을 밝히는 등불">
+      <rect width="700" height="130" fill="#FFFCF2"/>
+      <g transform="translate(350,68)"><circle r="46" fill="#F7E4A0" opacity="0.55"/><circle r="28" fill="#F2C84B" opacity="0.7"/><rect x="-15" y="-28" width="30" height="42" rx="6" fill="#C9A24A"/><rect x="-19" y="-32" width="38" height="8" rx="3" fill="#9A7A2E"/><circle cx="0" cy="-7" r="9" fill="#FFF3C4"/><rect x="-3" y="14" width="6" height="13" fill="#9A7A2E"/></g>
+    </svg>
+    <h2>"네 이야기에 불을 밝혀라"</h2>
+    <p>가설이 "이렇더라"는 말에 그치지 않도록, 선현의 지혜로 등불을 켜는 보물이에요. <span class="say">"가설은 묘사가 아니라 이론이어야 한단다."</span></p>
+    <div class="act">
+      <p class="hd">🗂 실제 대응</p>
+      <ul>
+        <li><span class="who">심사자1·B2~4</span> 가설 H1~H6을 <b>구성개념 간 관계</b>로 다시 서술(예: "기능 유형 → 지식 의존/착근/자율성"의 인과 논리 제시).</li>
+        <li>이론 토대 보강: 지식이전·HRM은 <b>Minbaeva et al.(2003)</b>·<b>Gupta & Govindarajan(2000)</b>, 신뢰·의존은 <b>Hewett & Bearden(2001)</b>, 자율성 2차원은 <b>Ambos et al.(2011)</b>·<b>Geleilate et al.(2020)</b>.</li>
+        <li><span class="who">서론·A1·A3</span> 첫 두 문단을 <b>Birkinshaw 계열</b>(Moore & Birkinshaw 1998; Birkinshaw & Pedersen 2001)·<b>Belderbos et al.(2013)</b>·<b>Ambos et al.(2010)</b>에 grounding → 연구공백·질문·기여를 명시.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 보물 2 -->
+  <section class="page">
+    <p class="pnum">보물 ② · 질적방법의 돋보기</p>
+    <svg class="scene" viewBox="0 0 700 130" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="인터뷰를 들여다보는 돋보기">
+      <rect width="700" height="130" fill="#FFFCF2"/>
+      <g transform="translate(345,62)"><circle r="36" fill="#DCEAF0" stroke="#6E9CB8" stroke-width="6"/><line x1="26" y1="26" x2="56" y2="56" stroke="#6E9CB8" stroke-width="11" stroke-linecap="round"/><line x1="-16" y1="-8" x2="16" y2="-8" stroke="#4A7BA6" stroke-width="3" stroke-linecap="round"/><line x1="-16" y1="2" x2="12" y2="2" stroke="#4A7BA6" stroke-width="3" stroke-linecap="round"/><line x1="-16" y1="12" x2="8" y2="12" stroke="#4A7BA6" stroke-width="3" stroke-linecap="round"/></g>
+    </svg>
+    <h2>"속을 들여다본 길을 보여라"</h2>
+    <p>35명의 이야기를 어떻게 듣고, 어떻게 같은 빛깔로 묶었는지 그 길을 또박또박 그려 보이는 보물이에요.</p>
+    <div class="act">
+      <p class="hd">🗂 실제 대응</p>
+      <ul>
+        <li><span class="who">심사자1·C1c</span> Methodology에 <b>질적 분석 절차</b> 명시: 인터뷰 코딩 단계(개방→축), <b>주제분석(thematic analysis)</b> 과정, 코더 간 신뢰도, 대표 인용 선정 기준.</li>
+        <li>양적·질적 <b>통합 방식</b>을 설명: 인터뷰가 t-검정 결과를 어떻게 해석·삼각검증(triangulation)하는지(joint display 권장).</li>
+        <li>혼합방법의 정당화는 <b>Kim et al.(2012, JIBS)</b>를 인용해 "왜 mixed methods인가"를 분명히.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 보물 3 -->
+  <section class="page">
+    <p class="pnum">보물 ③ · 맥락의 지도</p>
+    <svg class="scene" viewBox="0 0 700 130" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="나라와 두 마을을 표시한 지도">
+      <rect width="700" height="130" fill="#FFFCF2"/>
+      <rect x="280" y="18" width="140" height="96" rx="6" fill="#EFE6CF" stroke="#C9A878" stroke-width="2"/>
+      <path d="M298 92 Q328 54 358 72 T420 62" stroke="#B7976A" stroke-width="2" fill="none"/>
+      <g><circle cx="324" cy="50" r="8" fill="#4A7BA6"/><text x="324" y="72" text-anchor="middle" font-family="Gaegu,cursive" font-size="13" fill="#2C4A63">ICT 마을</text></g>
+      <g><circle cx="398" cy="90" r="8" fill="#C8743A"/><text x="398" y="110" text-anchor="middle" font-family="Gaegu,cursive" font-size="13" fill="#8A4A22">자동차 마을</text></g>
+      <text x="350" y="14" text-anchor="middle" font-family="Gaegu,cursive" font-size="14" fill="#9A8A66">한국</text>
+    </svg>
+    <h2>"어느 땅, 어느 마을인지 말하라"</h2>
+    <p>이야기가 자란 나라와 두 마을의 사연을 또렷이 밝히는 보물이에요.</p>
+    <div class="act">
+      <p class="hd">🗂 실제 대응</p>
+      <ul>
+        <li><span class="who">A2·C1a</span> Sample & Data에 국가(<b>한국</b>)를 명시하고 <b>왜 한국인가</b>(MNC 자회사 밀집, R&D·마케팅 공존 맥락)를 설명.</li>
+        <li><b>왜 ICT·자동차인가</b>: 두 산업 모두 자회사 수준에서 R&D와 마케팅이 활발하고 글로벌통합–현지대응 긴장이 뚜렷해 기능 비교에 적합함을 근거 제시.</li>
+        <li>서론에도 국가·산업 맥락을 한 단락으로 소개해 연구설계와 연결.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 보물 4 -->
+  <section class="page">
+    <p class="pnum">보물 ④ · 측정의 저울과 인과의 화살</p>
+    <svg class="scene" viewBox="0 0 700 140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="변수를 재는 저울과 원인을 가리키는 화살">
+      <rect width="700" height="140" fill="#FFFCF2"/>
+      <g transform="translate(250,72)"><line x1="0" y1="-38" x2="0" y2="36" stroke="#9A7A2E" stroke-width="5"/><line x1="-46" y1="-28" x2="46" y2="-28" stroke="#9A7A2E" stroke-width="4"/><path d="M-46 -28 L-60 4 L-32 4 Z" fill="#DCEAF0" stroke="#6E9CB8" stroke-width="2"/><path d="M46 -28 L32 4 L60 4 Z" fill="#FAE7DA" stroke="#C8743A" stroke-width="2"/><rect x="-16" y="36" width="32" height="8" rx="3" fill="#9A7A2E"/></g>
+      <g transform="translate(430,72)"><circle cx="0" cy="0" r="20" fill="#C8DDA8"/><text x="0" y="5" text-anchor="middle" font-family="Gaegu,cursive" font-size="13" fill="#3B6D11">원인</text><line x1="26" y1="0" x2="110" y2="0" stroke="#639922" stroke-width="3"/><polygon points="110,-5 122,0 110,5" fill="#639922"/><circle cx="145" cy="0" r="20" fill="#C8DDA8"/><text x="145" y="5" text-anchor="middle" font-family="Gaegu,cursive" font-size="13" fill="#3B6D11">결과</text></g>
+    </svg>
+    <h2>"무엇을 어떻게 쟀고, 무엇이 원인이냐"</h2>
+    <p>잰 것들을 가지런히 보여 주고, 인과의 방향을 정직하게 가리키는 보물이에요.</p>
+    <div class="act">
+      <p class="hd">🗂 실제 대응</p>
+      <ul>
+        <li><span class="who">C1b</span> Measures에 변수 구조 명확화 — 이 연구는 회귀형 DV/IV가 아니라 <b>기능(R&D vs 마케팅) 간 평균 비교</b>임을 분명히 하고, 비교변수·통제변수(산업·팀규모·본국)를 표로 정리.</li>
+        <li><b>리커트 5점</b> 척도점·문항·신뢰도(Cronbach's α)·집계 방식을 보고.</li>
+        <li><span class="who">C1d</span> Results에 <b>상관관계표</b>와 표 해설 추가. <b>인과성</b>은 횡단설계 한계를 인정하고 인과 단정 대신 "차이/연관"으로 신중히 기술.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 보물 5 -->
+  <section class="page">
+    <p class="pnum">보물 ⑤ · 먼 곳을 보는 망원경</p>
+    <svg class="scene" viewBox="0 0 700 130" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="먼 미래와 다른 마을을 보는 망원경">
+      <rect width="700" height="130" fill="#FFFCF2"/>
+      <g transform="translate(300,68) rotate(-20)"><rect x="-38" y="-11" width="66" height="22" rx="8" fill="#7C6A55"/><rect x="26" y="-15" width="32" height="30" rx="8" fill="#9A8775"/><circle cx="56" cy="0" r="13" fill="#DCEAF0" stroke="#6E9CB8" stroke-width="2"/></g>
+      <g fill="#F2C84B"><circle cx="470" cy="35" r="3"/><circle cx="510" cy="55" r="4"/><circle cx="548" cy="30" r="3"/><circle cx="500" cy="88" r="3"/><circle cx="543" cy="74" r="4"/></g>
+      <text x="510" y="115" text-anchor="middle" font-family="Gaegu,cursive" font-size="14" fill="#9A8A66">다른 산업 · 먼 미래</text>
+    </svg>
+    <h2>"이 이야기가 닿지 못한 곳을 헤아려라"</h2>
+    <p>자기 이야기의 끝을 정직하게 내다보며, 못다 한 길을 적어 두는 보물이에요.</p>
+    <div class="act">
+      <p class="hd">🗂 실제 대응</p>
+      <ul>
+        <li><span class="who">심사자1·D2</span> Discussion 한계를 확장: <b>2개 산업·단일 국가</b>의 일반화 제약, 기능 분할 시 표본/검정력(278 vs 280로 충분함을 명시), <b>횡단→종단</b>의 시간성 한계.</li>
+        <li>발견의 <b>이론적 의의</b>를 별도 단락으로 정리(give-and-take 거버넌스가 기존 자율성·이중착근 이론을 어떻게 확장하는지).</li>
+        <li>Future research: 종단설계, 추가 기능(생산·재무), 지식이전 효과·성과와의 연결.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 종합 대응표 -->
+  <section class="page">
+    <p class="pnum">한눈에 · 심사자 의견 → 대응 지도</p>
+    <h2>다섯 보물 종합표</h2>
+    <table>
+      <tr><th>보물</th><th>심사자 지적</th><th>대응 한 줄</th></tr>
+      <tr><td><b>① 이론의 등불</b></td><td>가설이 서술적·이론 옅음 (심사자1; B2–4)</td><td>가설 재서술 + Hewett&Bearden·Minbaeva·Ambos·Geleilate로 이론화</td></tr>
+      <tr><td><b>② 돋보기</b></td><td>질적 분석 절차 불투명 (심사자1; C1c)</td><td>코딩·주제분석 절차 명시 + 양적·질적 통합(Kim 2012)</td></tr>
+      <tr><td><b>③ 지도</b></td><td>국가·산업 맥락 부족·일반화 (A2; C1a)</td><td>한국·ICT·자동차 선정 이유 명시</td></tr>
+      <tr><td><b>④ 저울·화살</b></td><td>변수·상관표·인과성 (C1b·d)</td><td>비교설계 명확화 + 상관표·신뢰도 + 인과 신중화</td></tr>
+      <tr><td><b>⑤ 망원경</b></td><td>일반화·검정력·종단 부재 (심사자1; D2)</td><td>한계 확장 + 종단·성과연계 향후과제</td></tr>
+    </table>
+  </section>
+
+  <!-- The End -->
+  <section class="page" style="text-align:center;">
+    <p class="pnum" style="text-align:center;">마지막 장 · 다시 성문 앞에서</p>
+    <svg class="scene" viewBox="0 0 700 170" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="다섯 보물을 모아 빛나는 꼬마 논문이">
+      <rect width="700" height="120" fill="#E7EEF2"/>
+      <path d="M0 90 L700 90 L700 170 L0 170Z" fill="#C7D6BC"/>
+      <g fill="#9A8775"><rect x="300" y="34" width="100" height="56"/><rect x="288" y="24" width="34" height="66"/><rect x="378" y="24" width="34" height="66"/></g>
+      <rect x="338" y="58" width="24" height="32" rx="12" fill="#5E4F3F"/>
+      <g transform="translate(180,78)"><circle r="40" fill="#F7E4A0" opacity="0.5"/><circle r="24" fill="#E7C9A0"/><circle cx="-7" cy="-3" r="3.5" fill="#33291B"/><circle cx="8" cy="-3" r="3.5" fill="#33291B"/><path d="M-8 8 Q0 15 9 8" stroke="#33291B" stroke-width="2.2" fill="none" stroke-linecap="round"/></g>
+      <g fill="#F2C84B"><circle cx="130" cy="30" r="3.5"/><circle cx="240" cy="40" r="3"/><circle cx="520" cy="35" r="3.5"/><circle cx="470" cy="60" r="3"/></g>
+    </svg>
+    <p>이론의 등불, 돋보기, 지도, 저울과 화살, 그리고 망원경 — 다섯 보물을 모은 꼬마 논문이는 마침내 환히 빛났어요.</p>
+    <p><b>두 부엉이의 지적은 흠이 아니라, 더 단단한 이야기로 가는 보물 지도였답니다.</b></p>
+    <p class="end">— 끝 —</p>
+    <div class="act" style="text-align:left;">
+      <p class="hd">📮 다음 걸음 (Revise & Resubmit 체크리스트)</p>
+      <ul>
+        <li>① 서론·이론·가설 재작성 → ② 질적 절차 보강 → ③ 맥락 명시 → ④ 측정·상관·인과 정비 → ⑤ 한계·향후과제 확장</li>
+        <li>각 지적에 "지적–수정–위치(페이지/섹션)"로 답하는 <b>Response-to-Reviewers 표</b> 작성.</li>
+      </ul>
+    </div>
+    <div class="act" style="text-align:left; margin-top:16px;">
+      <p class="hd">📚 인용할 참고문헌 (심사자 추천)</p>
+      <div class="refs">
+        <p>Moore & Birkinshaw (1998); Birkinshaw & Pedersen (2001); Belderbos, Leten & Suzuki (2013); Ambos, Andersson & Birkinshaw (2010); Gupta & Govindarajan (2000); Minbaeva et al. (2003; 2014); Hewett & Bearden (2001); Ambos, Asakawa & Ambos (2011); Geleilate, Andrews & Fainshmidt (2020); Kim, Lu & Rhee (2012).</p>
+      </div>
+    </div>
+  </section>
+
+  <footer><p>그림 동화 · <a href="https://github.com/sdkparkforbi/mnc-twins-storybook">GitHub에서 보기</a> · <a href="index.html">두 쌍둥이 이야기 →</a></p></footer>
+</div>
+<script>
+  var bar=document.getElementById('bar');
+  function up(){var h=document.documentElement;var s=h.scrollTop;var m=h.scrollHeight-h.clientHeight;bar.style.width=(m>0?(s/m*100):0)+'%';}
+  window.addEventListener('scroll',up,{passive:true});window.addEventListener('resize',up);up();
+</script>
+</body>
+</html>

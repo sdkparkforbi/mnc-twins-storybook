@@ -8,7 +8,8 @@
 
 ## 📖 보러 가기
 
-GitHub Pages에서 바로 읽어보세요 → **https://sdkparkforbi.github.io/mnc-twins-storybook/**
+- **동화: 두 쌍둥이 이야기** (논문 내용) → **https://sdkparkforbi.github.io/mnc-twins-storybook/**
+- **대응 전략: 꼬마 논문이의 대응 모험** (심사자 대응) → **https://sdkparkforbi.github.io/mnc-twins-storybook/strategy.html**
 
 ## 🧩 이야기 속에 담긴 연구
 
